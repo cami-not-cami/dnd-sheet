@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>dnd_sheet</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="05-576x1024.webp" />
+    <None Remove="DnD-Symbol.png" />
+    <None Remove="dungeons-and-dragons-phone-k1085qdim2l1sj51.jpg" />
+    <None Remove="Screenshot 2025-01-09 080959.png" />
+    <None Remove="sword.jpg" />
+    <None Remove="wallp dnd.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="05-576x1024.webp" />
+    <Resource Include="DnD-Symbol.png" />
+    <Resource Include="dungeons-and-dragons-phone-k1085qdim2l1sj51.jpg" />
+    <Resource Include="Screenshot 2025-01-09 080959.png" />
+    <Resource Include="sword.jpg" />
+    <Resource Include="wallp dnd.jpg" />
+  </ItemGroup>
+
+</Project>
