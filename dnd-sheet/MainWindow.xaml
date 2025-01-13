@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dnd_sheet"
         mc:Ignorable="d"
-        SizeChanged="Window_SizeChanged" MinHeight="900" MinWidth="600"
+        SizeChanged="Window_SizeChanged" MinHeight="900" MinWidth="900"
         Title="MainWindow" Height="900" Width="600" 
         Background="Black"
         >
@@ -16,7 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
             <RowDefinition/>
-            <RowDefinition Height="300"/>
+            <RowDefinition Height="350"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -136,13 +136,14 @@
             <Label Content="Other Proficiencies &amp; Languages" Grid.Row="1" Foreground="#FFFDFDFD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Agency FB" FontWeight="Bold" FontSize="11"/>
             <TextBox TextWrapping="Wrap" Background="{x:Null}" Foreground="#FFFDFDFD" FontWeight="Bold" BorderBrush="#FF4CBF35"/>
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="2">
+        <Grid Grid.Column="1" Grid.Row="2" RenderOptions.BitmapScalingMode="HighQuality">
             <Grid.Background>
                 <ImageBrush/>
             </Grid.Background>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="102"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="51*"/>
+                <ColumnDefinition Width="25*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -152,20 +153,57 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Image Source="/tokendnd.png" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2"/>
-            <Image Source="/tokendnd.png" Grid.Row="2"/>
-            <Image Source="/tokendnd.png" Grid.Row="3"/>
-            <Image Source="/tokendnd.png" Grid.Row="4"/>
-            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.RowSpan="2" >
+
+            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.Column="1" >
                 <TextBox.Background>
-                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Fill" TileMode="None"/>
                 </TextBox.Background>
                 <TextBox.OpacityMask>
                     <ImageBrush ImageSource="/newtoke - Kopie.png"/>
                 </TextBox.OpacityMask>
             </TextBox>
-
+            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.Row="1" Grid.Column="1" >
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Fill"/>
+                </TextBox.Background>
+                <TextBox.OpacityMask>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png"/>
+                </TextBox.OpacityMask>
+            </TextBox>
+            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.Row="2" Grid.Column="1" >
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Fill"/>
+                </TextBox.Background>
+                <TextBox.OpacityMask>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png"/>
+                </TextBox.OpacityMask>
+            </TextBox>
+            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.Row="3" Grid.Column="1" >
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Fill"/>
+                </TextBox.Background>
+                <TextBox.OpacityMask>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png"/>
+                </TextBox.OpacityMask>
+            </TextBox>
+            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.Row="4" Grid.Column="1" >
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Fill"/>
+                </TextBox.Background>
+                <TextBox.OpacityMask>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png"/>
+                </TextBox.OpacityMask>
+            </TextBox>
+            <Label Content="Equipment" Grid.Row="2" FontFamily="Agency FB" FontWeight="Bold" Foreground="White" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
         </Grid>
-
     </Grid>
 </Window>
