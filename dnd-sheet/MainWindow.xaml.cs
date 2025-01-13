@@ -39,5 +39,10 @@ namespace dnd_sheet
         {
 
         }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

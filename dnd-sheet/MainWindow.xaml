@@ -67,15 +67,15 @@
             <Label Content="Class &amp; Level" Grid.Row="1" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFF5FD"/>
             <TextBox Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Foreground="White" Background="{x:Null}" BorderBrush="#FF4CBF35"/>
             <Label Content="Race" Grid.Row="3" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFF5FD"/>
-            <TextBox Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}"/>
+            <TextBox Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}" Foreground="#FFFDFDFD"/>
             <Label Grid.Column="2" Content="Background" Grid.Row="1" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFF5FD"/>
-            <TextBox Grid.Column="3" Grid.Row="1" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}"/>
+            <TextBox Grid.Column="3" Grid.Row="1" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}" Foreground="#FFFDFDFD"/>
             <Label Grid.Column="2" Content="Alignment" Grid.Row="3" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFF5FD"/>
-            <TextBox Grid.Column="3" Grid.Row="3" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}"/>
+            <TextBox Grid.Column="3" Grid.Row="3" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}" Foreground="#FFFDFDFD"/>
             <Label Grid.Column="4" Content="Player Name" Grid.Row="1" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFF5FD"/>
-            <TextBox Grid.Column="5" Grid.Row="1" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" BorderBrush="#FF4CBF35" Background="{x:Null}"/>
+            <TextBox Grid.Column="5" Grid.Row="1" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" BorderBrush="#FF4CBF35" Background="{x:Null}" Foreground="#FFFDFDFD"/>
             <Label Grid.Column="4" Content="Exp. Points" Grid.Row="3" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFFFF5FD"/>
-            <TextBox Grid.Column="5" Grid.Row="3" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}"/>
+            <TextBox Grid.Column="5" Grid.Row="3" TextWrapping="Wrap" BorderBrush="#FF4CBF35" Background="{x:Null}" Foreground="#FFFDFDFD"/>
         </Grid>
         <Grid x:Name="grid_BottomRight" Grid.Column="2" Grid.Row="2">
             <Grid.RowDefinitions>
@@ -87,19 +87,84 @@
         </Grid>
         <Grid x:Name="grid_midRight" Grid.Column="2" Grid.Row="1">
             <Grid.RowDefinitions>
+                <RowDefinition Height="84*"/>
+                <RowDefinition Height="67*"/>
+                <RowDefinition Height="26*"/>
+                <RowDefinition Height="84*"/>
+                <RowDefinition Height="87*"/>
+                <RowDefinition Height="87*"/>
+            </Grid.RowDefinitions>
+            <Grid Margin="0,0,0,2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Label Content="Personality Traits" Grid.Row="1" Background="{x:Null}" Foreground="#FFF9F9F9" HorizontalContentAlignment="Center" FontWeight="Bold" FontFamily="Agency FB" VerticalContentAlignment="Stretch" Padding="5,5,5,2"/>
+                <TextBox TextWrapping="Wrap" Background="{x:Null}" Foreground="#FFFDFDFD"  FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Row="1" Margin="0,0,0,3" Grid.RowSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <Label Content="Ideals" Grid.Row="1" HorizontalContentAlignment="Center" FontFamily="Agency FB" Foreground="#FFFDFDFD" FontWeight="Bold"/>
+                <TextBox TextWrapping="Wrap"  FontWeight="Bold" Background="{x:Null}" Foreground="#FFFDFDFD"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <TextBox TextWrapping="Wrap" Background="{x:Null}" Foreground="#FFFDFDFD"  FontWeight="Bold"/>
+                <Label Content="Bonds" Grid.Row="1" Foreground="#FFFDFDFD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Agency FB" FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <TextBox TextWrapping="Wrap" Background="{x:Null}" Foreground="#FFFDFDFD"  FontWeight="Bold"/>
+                <Label Content="Flaws" Grid.Row="1" Foreground="#FFFDFDFD" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Agency FB" FontWeight="Bold"/>
+            </Grid>
+        </Grid>
+        <Label Grid.Column="1" Content="Attacks and spellcasting" HorizontalAlignment="Center" Margin="0,379,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="#FFFDFDFD" Height="45" Width="148"/>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Label Content="Other Proficiencies &amp; Languages" Grid.Row="1" Foreground="#FFFDFDFD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Agency FB" FontWeight="Bold" FontSize="11"/>
+            <TextBox TextWrapping="Wrap" Background="{x:Null}" Foreground="#FFFDFDFD" FontWeight="Bold" BorderBrush="#FF4CBF35"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="102"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Grid Grid.RowSpan="2" Margin="0,0,0,87">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="25"/>
-                </Grid.RowDefinitions>
-                <Label Content="Personality Traits" Grid.Row="1" Background="{x:Null}" Foreground="#FFF9F9F9" HorizontalContentAlignment="Center" FontWeight="Bold" FontFamily="Agency FB"/>
-            </Grid>
+
+            <Image Source="/tokendnd.png" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2"/>
+            <Image Source="/tokendnd.png" Grid.Row="2"/>
+            <Image Source="/tokendnd.png" Grid.Row="3"/>
+            <Image Source="/tokendnd.png" Grid.Row="4"/>
+            <TextBox TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged_1" Text="" Foreground="#FFED0808" Grid.RowSpan="2" >
+                <TextBox.Background>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png" Stretch="Uniform"/>
+                </TextBox.Background>
+                <TextBox.OpacityMask>
+                    <ImageBrush ImageSource="/newtoke - Kopie.png"/>
+                </TextBox.OpacityMask>
+            </TextBox>
+
         </Grid>
 
     </Grid>
